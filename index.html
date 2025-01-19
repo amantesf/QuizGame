@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
         <div class="config-option">
             <h4 class="option-title">Select Category</h4>
             <div class="category-options">
-                <button class="category-option">History</button>
+                <button class="category-option active">History</button>
                 <button class="category-option">Gaming</button>
                 <button class="category-option">Music</button>
                 <button class="category-option">Movies/TV Shows</button>
@@ -24,7 +25,7 @@
             <h4 class="option-title">No. of Questions</h4>
             <div class="questions-options">
                 <button class="questions-option">5</button>
-                <button class="questions-option">10</button>
+                <button class="questions-option active">10</button>
                 <button class="questions-option">15</button>
                 <button class="questions-option">20</button>
                 <button class="questions-option">25</button>
@@ -32,6 +33,44 @@
         </div>
 
         <button class="start-quiz-btn">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h2 class="quiz-title">QuizGame</h2>
+            <div class="quiz-timer">
+                <span class="material-symbols-roujnded">timer</span>
+                <p class="time-duration">15s</p>
+            </div>
+        </header>
+
+        <div class="quiz-content">
+            <h1 class="question-text">What year did the U.S officially get involved in WWII?</h1>
+        <ul class="answer-options">
+            <li class="answer-option">
+                <p>1938</p>
+            </li>
+            <li class="answer-option correct">
+                <p>1941</p>
+                <span class="material-symbols-rounded">check_circle</span>
+
+            </li>
+            <li class="answer-option incorrect">
+                <p>1944</p>
+                <span class="material-symbols-rounded">cancel</span>
+            </li>
+            <li class="answer-option">
+                <p>1918</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="quiz-footer">
+        <p class="question-status"><b>2</b> of <b>10</b> Questions</p>
+        <button class="next-question-btn">
+            Next
+            <span class="material-symbols-rounded">arrow_right_alt</span>
+        </button>
     </div>
 </body>
 </html>
