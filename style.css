@@ -25,6 +25,7 @@ body {
 }
 
 .config-container{
+    display: block;
     width: 415px;
     padding: 20px;
     text-align: center;
@@ -129,6 +130,7 @@ body {
    padding: 7px 9px;
    border-radius: 6px;
    background: #323232;
+   transition: 0.3s ease;
 
 }
 .quiz-header .quiz-timer span {
@@ -194,6 +196,7 @@ body {
 
 .quiz-footer .next-question-btn {
     display: inline-flex;
+    visibility: hidden;
     gap: 5px;
     align-items: center;
     padding: 9px 17px; 

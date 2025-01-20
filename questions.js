@@ -1,527 +1,558 @@
-// Array of questions grouped by category (25 questions each)
 
 const questions = [
   {
-    category: "programming",
+    category: "History",
     questions: [
       {
-        question: "What does HTML stand for?",
-        options: ["Hyper Text Pre Processor", "Hyper Text Markup Language", "Hyper Text Multiple Language", "Hyper Tool Multi Language"],
+        question: "Who was the first President of the United States?",
+        options: ["George Washington", "John Adams", "Thomas Jefferson", "James Madison"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What year did the American Civil War begin?",
+        options: ["1860", "1861", "1862", "1863"],
         correctAnswer: 1,
       },
       {
-        question: "Which of the following is a correct way to declare a variable in JavaScript?",
-        options: ["var x = 10;", "variable x = 10;", "int x = 10;", "let 10 = x;"],
-        correctAnswer: 0,
-      },
-      {
-        question: "How do you write comment in Python?",
-        options: ["// This is a comment", "# This is a comment", "/* This is a comment */", "<!-- This is a comment -->"],
+        question: "Who wrote the Declaration of Independence?",
+        options: ["Benjamin Franklin", "Thomas Jefferson", "John Hancock", "James Madison"],
         correctAnswer: 1,
       },
       {
-        question: "What does CSS stand for?",
-        options: ["Cascading Style Sheets", "Colorful Style Sheets", "Computer Style Sheets", "Cascading Simple Sheets"],
+        question: "What empire was known for its road system?",
+        options: ["Roman Empire", "Mongol Empire", "Ottoman Empire", "Byzantine Empire"],
         correctAnswer: 0,
       },
       {
-        question: "In JavaScript, how do you create a function?",
-        options: ["create function myFunction()", "def function myFunction()", "func myFunction()", "function myFunction()"],
-        correctAnswer: 3,
+        question: "Who was the first female Prime Minister of the UK?",
+        options: ["Theresa May", "Margaret Thatcher", "Queen Elizabeth I", "Angela Merkel"],
+        correctAnswer: 1,
       },
       {
-        question: "What does the 'typeof' operator do in JavaScript?",
-        options: ["Checks the type of a variable", "Declares a variable", "Assigns a value to a variable", "Converts a variable to another type"],
+        question: "What year did World War II end?",
+        options: ["1944", "1945", "1946", "1947"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Which ancient wonder was located in Babylon?",
+        options: [
+          "The Great Pyramid",
+          "The Hanging Gardens",
+          "The Colossus of Rhodes",
+          "The Temple of Artemis",
+        ],
+        correctAnswer: 1,
+      },
+      {
+        question: "Who was the first Emperor of Rome?",
+        options: ["Julius Caesar", "Augustus", "Nero", "Tiberius"],
+        correctAnswer: 1,
+      },
+      {
+        question: "The 'Trail of Tears' was a result of which policy?",
+        options: [
+          "The Homestead Act",
+          "The Indian Removal Act",
+          "The Dawes Act",
+          "The Missouri Compromise",
+        ],
+        correctAnswer: 1,
+      },
+      {
+        question: "What ancient civilization built Machu Picchu?",
+        options: ["Aztec", "Inca", "Maya", "Olmec"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Who led the Soviet Union during World War II?",
+        options: ["Joseph Stalin", "Vladimir Lenin", "Nikita Khrushchev", "Leon Trotsky"],
         correctAnswer: 0,
       },
       {
-        question: "In C, how do you define a function?",
-        options: ["function myFunction()", "def myFunction()", "void myFunction()", "func myFunction()"],
+        question: "What event marked the start of the Great Depression?",
+        options: ["World War I", "Stock Market Crash of 1929", "Dust Bowl", "Pearl Harbor"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What country did the United States gain independence from?",
+        options: ["France", "Spain", "Great Britain", "Netherlands"],
         correctAnswer: 2,
       },
       {
-        question: "Which of the following is a characteristic of Python?",
-        options: ["Compiled language", "Dynamic typing", "Low-level language", "Static typing"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which language is used for Android development?",
-        options: ["Python", "Java", "JavaScript", "C++"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the purpose of the 'forEach()' method in JavaScript?",
-        options: ["Removes duplicate elements from an array", "Filters elements in an array", "Sorts an array", "Iterates through each element in an array"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What does the 'return' keyword do in a function?",
-        options: ["Ends the function and returns a value", "Continues the function", "Exits the function without value", "Ends the program execution"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which of the following is NOT a semantic HTML element?",
-        options: ["<header>", "<footer>", "<div>", "<article>"],
+        question: "The Berlin Wall was constructed in what year?",
+        options: ["1959", "1960", "1961", "1962"],
         correctAnswer: 2,
       },
       {
-        question: "What is the primary purpose of a 'for' loop in programming?",
-        options: ["Repeat code for a specified number of times", "Repeat code until a condition is true", "Define a function", "Evaluate conditions in the loop"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which data structure is ideal for LIFO (Last In First Out)?",
-        options: ["Queue", "Stack", "Linked list", "Array"],
+        question: "Who discovered America in 1492?",
+        options: ["Leif Erikson", "Christopher Columbus", "Vasco da Gama", "Ferdinand Magellan"],
         correctAnswer: 1,
       },
       {
-        question: "Which command is used in Git to store changes in the repository?",
-        options: ["git commit", "git push", "git pull", "git add"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What does the 'map()' function do in JavaScript?",
-        options: ["Sorts an array", "Filters out items", "Creates a new array", "Modifies the original array"],
+        question: "What year did the Titanic sink?",
+        options: ["1910", "1911", "1912", "1913"],
         correctAnswer: 2,
       },
       {
-        question: "What is an IDE?",
-        options: ["An Integrated Development Environment", "A function for code execution", "An interpreter", "An input method for writing code"],
+        question: "Who was the first man to step on the moon?",
+        options: ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Michael Collins"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What was the capital of the Byzantine Empire?",
+        options: ["Rome", "Constantinople", "Athens", "Alexandria"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Which leader was known as 'The Sun King'?",
+        options: ["Louis XIV", "Henry VIII", "Napoleon Bonaparte", "Philip II"],
         correctAnswer: 0,
       },
       {
-        question: "Which of the following is a feature of object-oriented programming?",
-        options: ["Encapsulation", "Modularity", "Recursion", "Memory Management"],
-        correctAnswer: 0,
+        question: "The United Nations was founded in what year?",
+        options: ["1944", "1945", "1946", "1947"],
+        correctAnswer: 1,
       },
       {
-        question: "What does SQL stand for?",
-        options: ["Simple Question Language", "Systematic Query Language", "Standard Question Language", "Structured Query Language"],
+        question: "Who was the longest-reigning monarch in British history?",
+        options: ["Queen Victoria", "Queen Elizabeth II", "King George III", "Henry VIII"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Which war was fought between the North and South in the United States?",
+        options: ["Revolutionary War", "War of 1812", "Civil War", "World War I"],
+        correctAnswer: 2,
+      },
+      {
+        question: "Who led the Indian independence movement?",
+        options: ["Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose", "Indira Gandhi"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Which city was the center of the Renaissance?",
+        options: ["Paris", "Florence", "Rome", "Athens"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What year did the Cold War officially end?",
+        options: ["1988", "1989", "1990", "1991"],
         correctAnswer: 3,
-      },
-      {
-        question: "Which of these is an example of a non-relational database?",
-        options: ["MongoDB", "MySQL", "PostgreSQL", "Oracle"],
-        correctAnswer: 0,
-      },
-      {
-        question: "How do you write comment in CSS?",
-        options: ["// This is a comment", "/* This is a comment */", "# This is a comment", "<!-- This is a comment -->"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which of the following algorithms is used to sort an array by comparing elements?",
-        options: ["Bubble sort", "Insertion sort", "Quick sort", "Merge sort"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What does the 'finally' block in Java do?",
-        options: ["Handles all exceptions", "Attempts to handle runtime exceptions", "Executes code after try-catch", "Defines execution start point"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which data structure is best for searching elements quickly?",
-        options: ["Binary search tree", "Array", "Linked list", "Queue"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the correct syntax for a JavaScript if statement?",
-        options: ["if (condition) {}", "if condition {}", "if {} else", "if {condition}"],
-        correctAnswer: 0,
       },
     ],
   },
-
   {
-    category: "geography",
+    category: "Gaming",
     questions: [
       {
-        question: "Which is the longest river in the world?",
-        options: ["Amazon River", "Nile River", "Yangtze River", "Mississippi River"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which country is known as the Land of the Rising Sun?",
-        options: ["China", "South Korea", "Japan", "Thailand"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the largest ocean in the world?",
-        options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which country has the largest population in the world?",
-        options: ["India", "China", "United States", "Indonesia"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which country is known for the Great Barrier Reef?",
-        options: ["Australia", "United States", "South Africa", "New Zealand"],
+        question: "What is the best-selling video game of all time?",
+        options: ["Minecraft", "Grand Theft Auto V", "Tetris", "Wii Sports"],
         correctAnswer: 0,
       },
       {
-        question: "Which is the smallest country in the world?",
-        options: ["Monaco", "Liechtenstein", "Vatican City", "San Marino"],
+        question: "Which company created the PlayStation console?",
+        options: ["Nintendo", "Microsoft", "Sony", "Sega"],
         correctAnswer: 2,
       },
       {
-        question: "Which is the tallest mountain in the world?",
-        options: ["K2", "Mount Kilimanjaro", "Mount Everest", "Mount Fuji"],
+        question: "What year was the Nintendo Entertainment System (NES) released in North America?",
+        options: ["1983", "1985", "1987", "1989"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Which game is considered the first true battle royale?",
+        options: ["Fortnite", "PUBG", "H1Z1", "DayZ"],
         correctAnswer: 2,
       },
       {
-        question: "What is the capital of Canada?",
-        options: ["Ottawa", "Toronto", "Vancouver", "Montreal"],
+        question: "What is the highest rank in Counter-Strike: Global Offensive?",
+        options: ["Supreme Master First Class", "Global Elite", "Legendary Eagle", "Master Guardian"],
+        correctAnswer: 1,
+      },
+      {
+        question: "In which game series do you fight the Covenant and the Flood?",
+        options: ["Halo", "Doom", "Gears of War", "Destiny"],
         correctAnswer: 0,
       },
       {
-        question: "Which desert is the largest hot desert in the world?",
-        options: ["Gobi Desert", "Atacama Desert", "Sahara Desert", "Karakum Desert"],
-        correctAnswer: 2,
+        question: "What is the name of the main protagonist in The Legend of Zelda series?",
+        options: ["Zelda", "Link", "Ganondorf", "Epona"],
+        correctAnswer: 1,
       },
       {
-        question: "Which country is known as the Land of the Midnight Sun?",
-        options: ["Sweden", "Finland", "Norway", "Denmark"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the longest mountain range in the world?",
-        options: ["Himalayas", "Rocky Mountains", "Andes", "Alps"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which river flows through Egypt?",
-        options: ["Amazon River", "Yangtze River", "Nile River", "Ganges River"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which is the largest island in the world?",
-        options: ["Greenland", "New Guinea", "Borneo", "Madagascar"],
+        question: "Which game popularized the phrase 'The cake is a lie'?",
+        options: ["Portal", "Half-Life 2", "BioShock", "Fallout 3"],
         correctAnswer: 0,
       },
       {
-        question: "What is the capital of Japan?",
-        options: ["Beijing", "Seoul", "Tokyo", "Hong Kong"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which country has the most time zones?",
-        options: ["United States", "Russia", "Canada", "Australia"],
+        question: "What is the name of the fictional city where Grand Theft Auto V takes place?",
+        options: ["Liberty City", "Los Santos", "Vice City", "San Fierro"],
         correctAnswer: 1,
       },
       {
-        question: "Which country is known for the Eiffel Tower?",
-        options: ["Germany", "Italy", "Spain", "France"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which is the most populous city in the world?",
-        options: ["Tokyo", "Shanghai", "New York City", "Delhi"],
+        question: "Which game features a mode called 'Zombies'?",
+        options: ["Call of Duty", "Battlefield", "Apex Legends", "Valorant"],
         correctAnswer: 0,
       },
       {
-        question: "Which mountain range is located in South America?",
-        options: ["Himalayas", "Rocky Mountains", "Appalachian Mountains", "Andes"],
-        correctAnswer: 3,
+        question: "What is the main currency used in Fortnite?",
+        options: ["V-Bucks", "Robux", "Gold Coins", "Battle Points"],
+        correctAnswer: 0,
       },
       {
-        question: "Which continent is known as the 'Dark Continent'?",
-        options: ["Asia", "Africa", "South America", "Europe"],
-        correctAnswer: 1,
+        question: "Who is the developer of the Dark Souls series?",
+        options: ["FromSoftware", "Capcom", "Square Enix", "Bethesda"],
+        correctAnswer: 0,
       },
       {
-        question: "What is the capital of Brazil?",
-        options: ["Buenos Aires", "Rio de Janeiro", "Brasília", "Sao Paulo"],
+        question: "What year was the first Call of Duty game released?",
+        options: ["2001", "2002", "2003", "2004"],
         correctAnswer: 2,
       },
       {
-        question: "What is the official language of Brazil?",
-        options: ["Spanish", "English", "Portuguese", "French"],
-        correctAnswer: 2,
+        question: "In Overwatch, which hero is known for their catchphrase 'It's high noon'?",
+        options: ["McCree", "Tracer", "Reaper", "Genji"],
+        correctAnswer: 0,
       },
       {
-        question: "Which country has the most volcanoes?",
-        options: ["Japan", "Indonesia", "United States", "Italy"],
+        question: "What is the name of Mario's dinosaur companion?",
+        options: ["Yoshi", "Toad", "Bowser", "Luigi"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which game studio developed The Witcher series?",
+        options: ["BioWare", "CD Projekt Red", "Obsidian", "Rockstar Games"],
         correctAnswer: 1,
       },
       {
-        question: "Which city is known as the Big Apple?",
-        options: ["Los Angeles", "New York City", "Chicago", "San Francisco"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which ocean is located to the east of Africa?",
-        options: ["Indian Ocean", "Pacific Ocean", "Southern Ocean", "Atlantic Ocean"],
+        question: "What color is the ghost Blinky in Pac-Man?",
+        options: ["Blue", "Pink", "Orange", "Red"],
         correctAnswer: 3,
       },
       {
-        question: "Which is the second largest continent by area?",
-        options: ["Asia", "Africa", "North America", "Europe"],
+        question: "What is the main objective in Among Us?",
+        options: ["Collect stars", "Complete tasks and find impostors", "Win battles", "Solve puzzles"],
         correctAnswer: 1,
+      },
+      {
+        question: "Which game features the character Solid Snake?",
+        options: ["Metal Gear Solid", "Splinter Cell", "Hitman", "Deus Ex"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What was the first commercially successful video game?",
+        options: ["Pong", "Space Invaders", "Pac-Man", "Asteroids"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which video game series features the character Samus Aran?",
+        options: ["Metroid", "Star Fox", "Mega Man", "Castlevania"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What is the subtitle of The Legend of Zelda game released for the Nintendo Switch in 2017?",
+        options: ["Breath of the Wild", "Ocarina of Time", "Twilight Princess", "Skyward Sword"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which video game series includes 'Ezio's Trilogy'?",
+        options: ["Assassin's Creed", "Uncharted", "The Witcher", "Tomb Raider"],
+        correctAnswer: 0,
+      },
+      {
+        question: "In which game would you find the map 'Dust II'?",
+        options: ["Counter-Strike", "Overwatch", "Valorant", "Rainbow Six Siege"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What is the name of the blocky world-building game released in 2011?",
+        options: ["Roblox", "Terraria", "Minecraft", "Lego Worlds"],
+        correctAnswer: 2,
       },
     ],
   },
-
   {
-    category: "mathematics",
+    category: "Music",
     questions: [
-      {
-        question: "What is the square root of 144?",
-        options: ["10", "11", "12", "13"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is 15 × 13?",
-        options: ["180", "185", "195", "200"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 8³?",
-        options: ["512", "216", "256", "128"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is 48 ÷ 6?",
-        options: ["7", "8", "9", "10"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the value of 3 + 5 × 4?",
-        options: ["20", "22", "24", "23"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the sum of the angles in a triangle?",
-        options: ["180°", "360°", "90°", "270°"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the perimeter of a square with a side length of 4 cm?",
-        options: ["12 cm", "16 cm", "20 cm", "24 cm"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 11²?",
-        options: ["121", "131", "141", "111"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is 9 × 12?",
-        options: ["105", "110", "108", "120"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 16 ÷ 4?",
-        options: ["2", "3", "4", "5"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is 25% of 200?",
-        options: ["30", "40", "50", "60"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the area of a rectangle with length 5 cm and width 8 cm?",
-        options: ["40 cm²", "50 cm²", "55 cm²", "60 cm²"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 10 ÷ 2 + 3?",
-        options: ["8", "7", "9", "6"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 3 × 7 + 2?",
-        options: ["20", "21", "22", "23"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the greatest common divisor (GCD) of 24 and 36?",
-        options: ["4", "6", "8", "12"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the least common multiple (LCM) of 6 and 8?",
-        options: ["24", "32", "48", "56"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 2³ × 3?",
-        options: ["12", "15", "18", "24"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 10 × (5 + 3)?",
-        options: ["80", "70", "60", "50"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the value of 14 × 14?",
-        options: ["186", "196", "206", "216"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the sum of the first 10 positive integers?",
-        options: ["50", "55", "60", "65"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 12 × 15?",
-        options: ["150", "160", "170", "180"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the area of a circle with a radius of 3 cm? (Use π = 3.14)",
-        options: ["28.26 cm²", "31.42 cm²", "36.14 cm²", "39.14 cm²"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of (8 + 2) × 3?",
-        options: ["30", "32", "34", "28"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the value of 50% of 80?",
-        options: ["30", "35", "40", "45"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 25 ÷ 5 × 3?",
-        options: ["12", "15", "18", "20"],
-        correctAnswer: 1,
-      },
-    ],
-  },
-
-  {
-    category: "entertainment",
-    questions: [
-      {
-        question: "Who won the Academy Award for Best Actor in 2022?",
-        options: ["Leonardo DiCaprio", "Will Smith", "Joaquin Phoenix", "Matthew McConaughey"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which movie won the Academy Award for Best Picture in 2021?",
-        options: ["Parasite", "1917", "The Shape of Water", "Nomadland"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Who played the character of Jack Dawson in the movie Titanic?",
-        options: ["Leonardo DiCaprio", "Brad Pitt", "Johnny Depp", "Tom Hanks"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which TV show featured the characters Daenerys Targaryen and Jon Snow?",
-        options: ["Breaking Bad", "Game of Thrones", "The Witcher", "Vikings"],
-        correctAnswer: 1,
-      },
       {
         question: "Who is known as the 'King of Pop'?",
-        options: ["Michael Jackson", "Prince", "Whitney Houston", "Elvis Presley"],
+        options: ["Michael Jackson", "Elvis Presley", "Prince", "Madonna"],
         correctAnswer: 0,
       },
       {
-        question: "Which superhero is known for saying, 'I am Iron Man'?",
-        options: ["Black Panther", "Captain America", "Thor", "Iron Man"],
-        correctAnswer: 3,
+        question: "Which artist released the album 'Lemonade' in 2016?",
+        options: ["Beyoncé", "Rihanna", "Taylor Swift", "Adele"],
+        correctAnswer: 0,
       },
       {
-        question: "Which movie franchise includes a character named Luke Skywalker?",
-        options: ["Guardians of the Galaxy", "Star Wars", "The Matrix", "Star Trek"],
+        question: "What year did The Beatles break up?",
+        options: ["1967", "1968", "1970", "1971"],
+        correctAnswer: 2,
+      },
+      {
+        question: "Which of these songs was performed by Whitney Houston?",
+        options: ["I Will Always Love You", "Rolling in the Deep", "Like a Prayer", "Billie Jean"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What genre of music is associated with Bob Marley?",
+        options: ["Reggae", "Rock", "Pop", "Jazz"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Who was the lead vocalist of Queen?",
+        options: ["Freddie Mercury", "John Lennon", "Mick Jagger", "David Bowie"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which song did Ed Sheeran release in 2017 that became a worldwide hit?",
+        options: ["Shape of You", "Perfect", "Castle on the Hill", "Galway Girl"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which pop diva is known for the hits 'Toxic' and 'Baby One More Time'?",
+        options: ["Britney Spears", "Christina Aguilera", "Lady Gaga", "Kesha"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What was Elvis Presley’s first hit song?",
+        options: ["Heartbreak Hotel", "Hound Dog", "Jailhouse Rock", "Love Me Tender"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Who sang the hit song 'Rolling in the Deep'?",
+        options: ["Adele", "Beyoncé", "Lady Gaga", "Rihanna"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What year did Michael Jackson release 'Thriller'?",
+        options: ["1982", "1984", "1986", "1988"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which genre of music is known for artists like Tupac and The Notorious B.I.G.?",
+        options: ["Hip Hop", "Pop", "Rock", "Jazz"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which female artist is known for the song 'Like a Virgin'?",
+        options: ["Madonna", "Beyoncé", "Shakira", "Celine Dion"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which famous rock band performed 'Bohemian Rhapsody'?",
+        options: ["Queen", "The Rolling Stones", "Led Zeppelin", "The Who"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What is the title of the first album by The Beatles?",
+        options: ["Please Please Me", "Rubber Soul", "Revolver", "Let It Be"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which artist released 'Blonde' in 2016?",
+        options: ["Frank Ocean", "Kanye West", "Drake", "Jay-Z"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which pop group was known for the hit song 'Wannabe'?",
+        options: ["Spice Girls", "Destiny's Child", "Backstreet Boys", "NSYNC"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What song did Lady Gaga perform at the 2016 Super Bowl halftime show?",
+        options: ["Bad Romance", "Poker Face", "Just Dance", "Million Reasons"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which artist is known for the hit song 'Royals'?",
+        options: ["Lorde", "Kesha", "Adele", "Taylor Swift"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Who was the lead singer of Nirvana?",
+        options: ["Kurt Cobain", "Eddie Vedder", "Chris Cornell", "Scott Weiland"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What year did the song 'Smells Like Teen Spirit' release?",
+        options: ["1990", "1991", "1992", "1993"],
         correctAnswer: 1,
       },
       {
-        question: "Who played the character of Hermione Granger in the Harry Potter film series?",
-        options: ["Emma Watson", "Anne Hathaway", "Maggie Smith", "Natalie Portman"],
+        question: "Who won the Grammy Award for Album of the Year in 2016?",
+        options: ["Taylor Swift", "Adele", "Kendrick Lamar", "Ed Sheeran"],
         correctAnswer: 0,
       },
       {
-        question: "Who directed the movie 'Inception'?",
-        options: ["James Cameron", "Steven Spielberg", "Christopher Nolan", "Martin Scorsese"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which artist released the album 'Lover' in 2019?",
-        options: ["Billie Eilish", "Taylor Swift", "Ed Sheeran", "Ariana Grande"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What was the first video game to feature Mario?",
-        options: ["Mario Kart", "Super Mario Bros.", "Donkey Kong", "The Legend of Zelda"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which movie features the famous line, 'Here's looking at you, kid'?",
-        options: ["Casablanca", "Citizen Kane", "The Godfather", "Gone with the Wind"],
+        question: "What famous music festival is held annually in California?",
+        options: ["Coachella", "Lollapalooza", "Glastonbury", "Burning Man"],
         correctAnswer: 0,
       },
       {
-        question: "Which country won the FIFA World Cup in 2018?",
-        options: ["France", "Germany", "Argentina", "Brazil"],
+        question: "Which boy band was known for hits like 'I Want It That Way'?",
+        options: ["Backstreet Boys", "NSYNC", "Boyz II Men", "New Kids on the Block"],
         correctAnswer: 0,
       },
       {
-        question: "Who created the comic book character Spider-Man?",
-        options: ["Jack Kirby", "Stan Lee", "Steve Ditko", "John Romita"],
-        correctAnswer: 1,
-      },
-      {
-        question: "In which movie did Heath Ledger portray the Joker?",
-        options: ["The Dark Knight", "Batman Begins", "The Dark Knight Rises", "Joker"],
+        question: "Which legendary musician is known as 'The Boss'?",
+        options: ["Bruce Springsteen", "Bob Dylan", "John Lennon", "David Bowie"],
         correctAnswer: 0,
-      },
-      {
-        question: "Which band is known for the hit song 'Bohemian Rhapsody'?",
-        options: ["The Rolling Stones", "Led Zeppelin", "Queen", "The Beatles"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which actress starred as Katniss Everdeen in 'The Hunger Games'?",
-        options: ["Kristen Stewart", "Shailene Woodley", "Jennifer Lawrence", "Emma Stone"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Who played the role of the Joker in the 2019 movie 'Joker'?",
-        options: ["Heath Ledger", "Johnny Depp", "Joaquin Phoenix", "Jared Leto"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which Disney animated film features the song 'A Whole New World'?",
-        options: ["Cinderella", "Aladdin", "Beauty and the Beast", "The Little Mermaid"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which TV series features the characters of Walter White and Jesse Pinkman?",
-        options: ["Narcos", "Better Call Saul", "The Sopranos", "Breaking Bad"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Who sang the hit song 'Shape of You'?",
-        options: ["Justin Bieber", "Ariana Grande", "Sam Smith", "Ed Sheeran"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which film won the Academy Award for Best Picture in 2020?",
-        options: ["The Irishman", "Once Upon a Time in Hollywood", "Parasite", "1917"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What year did the movie 'The Matrix' release?",
-        options: ["1997", "1998", "2000", "1999"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which actor played Tony Stark/Iron Man in the Marvel Cinematic Universe?",
-        options: ["Mark Ruffalo", "Chris Evans", "Robert Downey Jr.", "Chris Hemsworth"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which singer is known as the 'Queen of Pop'?",
-        options: ["Mariah Carey", "Lady Gaga", "Whitney Houston", "Madonna"],
-        correctAnswer: 3,
       },
     ],
   },
-];
+  {
+  category: "Movies/TV Shows",
+  questions: [
+    {
+      question: "Who directed the movie 'Inception'?",
+      options: ["Christopher Nolan", "Steven Spielberg", "Martin Scorsese", "Quentin Tarantino"],
+      correctAnswer: 0,
+    },
+    {
+      question: "What year was 'The Godfather' released?",
+      options: ["1970", "1972", "1974", "1976"],
+      correctAnswer: 1,
+    },
+    {
+      question: "Which movie features the character 'Forrest Gump'?",
+      options: ["The Shawshank Redemption", "Forrest Gump", "The Green Mile", "Cast Away"],
+      correctAnswer: 1,
+    },
+    {
+      question: "Who played the character of Harry Potter in the film series?",
+      options: ["Daniel Radcliffe", "Rupert Grint", "Matthew Lewis", "Tom Felton"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which actor starred in the movie 'The Pursuit of Happyness'?",
+      options: ["Will Smith", "Denzel Washington", "Jamie Foxx", "Morgan Freeman"],
+      correctAnswer: 0,
+    },
+    {
+      question: "What animated movie features the character Elsa?",
+      options: ["Moana", "Frozen", "Tangled", "Zootopia"],
+      correctAnswer: 1,
+    },
+    {
+      question: "Which actor played Iron Man in the Marvel Cinematic Universe?",
+      options: ["Chris Hemsworth", "Robert Downey Jr.", "Mark Ruffalo", "Chris Evans"],
+      correctAnswer: 1,
+    },
+    {
+      question: "Which movie won the Academy Award for Best Picture in 1994?",
+      options: ["Schindler's List", "Forrest Gump", "The Shawshank Redemption", "Pulp Fiction"],
+      correctAnswer: 1,
+    },
+    {
+      question: "Who directed 'Jurassic Park'?",
+      options: ["Steven Spielberg", "James Cameron", "Peter Jackson", "Ridley Scott"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which movie features a character named 'Jack Dawson'?",
+      options: ["Titanic", "The Notebook", "Avatar", "The Revenant"],
+      correctAnswer: 0,
+    },
+    {
+      question: "What is the name of the fictional African country in 'Black Panther'?",
+      options: ["Wakanda", "Zamunda", "Genovia", "Elbonia"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which actor starred as the Joker in 'The Dark Knight'?",
+      options: ["Heath Ledger", "Jared Leto", "Jack Nicholson", "Mark Hamill"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Who directed 'Pulp Fiction'?",
+      options: ["Quentin Tarantino", "Martin Scorsese", "Ridley Scott", "Tim Burton"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which movie is about a group of kids who become friends after discovering a dead body?",
+      options: ["The Goonies", "Stand by Me", "The Sandlot", "It"],
+      correctAnswer: 1,
+    },
+    {
+      question: "What 2019 film featured a character named 'Joaquin Phoenix' as the Joker?",
+      options: ["Joker", "The Dark Knight", "Suicide Squad", "Birds of Prey"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which film franchise is known for its 'Death Star'?",
+      options: ["Star Wars", "Star Trek", "Battlestar Galactica", "The Matrix"],
+      correctAnswer: 0,
+    },
+    {
+      question: "In which TV series would you find a character named 'Walter White'?",
+      options: ["Breaking Bad", "The Sopranos", "Mad Men", "Stranger Things"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which movie features a dinosaur named 'Rex'?",
+      options: ["Toy Story", "Jurassic Park", "The Land Before Time", "The Good Dinosaur"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Who won the Oscar for Best Actor for 'The Revenant'?",
+      options: ["Matt Damon", "Tom Hardy", "Leonardo DiCaprio", "Brad Pitt"],
+      correctAnswer: 2,
+    },
+    {
+      question: "Which TV show features the characters 'Phoebe Buffay' and 'Ross Geller'?",
+      options: ["Friends", "How I Met Your Mother", "The Office", "Big Bang Theory"],
+      correctAnswer: 0,
+    },
+    {
+      question: "What movie features the quote 'May the Force be with you'?",
+      options: ["Star Wars", "The Matrix", "Avatar", "Guardians of the Galaxy"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Who starred as the lead character in 'Jack Reacher'?",
+      options: ["Tom Cruise", "Brad Pitt", "Matt Damon", "Will Smith"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which film series includes a character named 'Lara Croft'?",
+      options: ["Tomb Raider", "Indiana Jones", "National Treasure", "Pirates of the Caribbean"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which movie features a character called 'The Bride' seeking revenge?",
+      options: ["Kill Bill", "The Matrix", "Pulp Fiction", "Gladiator"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Who directed 'Avatar'?",
+      options: ["James Cameron", "Steven Spielberg", "George Lucas", "Peter Jackson"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which movie features a character named 'Elliot' and an alien named 'E.T.'?",
+      options: ["E.T. the Extra-Terrestrial", "Close Encounters of the Third Kind", "The Iron Giant", "The War of the Worlds"],
+      correctAnswer: 0,
+    },
+    {
+      question: "What is the name of the fictional planet in 'Star Wars' where Luke Skywalker grows up?",
+      options: ["Tatooine", "Endor", "Coruscant", "Hoth"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Who played the character of 'Indiana Jones'?",
+      options: ["Harrison Ford", "Bruce Willis", "Tom Cruise", "Johnny Depp"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Which film won the Oscar for Best Picture in 1994?",
+      options: ["The Shawshank Redemption", "Forrest Gump", "The Godfather", "Schindler's List"],
+      correctAnswer: 1,
+    },
+    {
+      question: "Which movie features a character named 'Rocky Balboa'?",
+      options: ["Rocky", "Raging Bull", "The Fighter", "Creed"],
+      correctAnswer: 0,
+    }
+  ]
+}
+]
